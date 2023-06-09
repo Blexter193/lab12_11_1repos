@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CEA3DDE42A293A7700A50B41 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA3DDE32A293A7700A50B41 /* main.cpp */; };
+		CEA281372A3328A600B9A587 /* UnitTest_12_11_1.mm in Sources */ = {isa = PBXBuildFile; fileRef = CEA281362A3328A600B9A587 /* UnitTest_12_11_1.mm */; };
+		CEA3DDE42A293A7700A50B41 /* Lab_12_11_1.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CEA3DDE32A293A7700A50B41 /* Lab_12_11_1.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,11 +24,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CEA281342A3328A500B9A587 /* UnitTest_12_11_1.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTest_12_11_1.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA281362A3328A600B9A587 /* UnitTest_12_11_1.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = UnitTest_12_11_1.mm; sourceTree = "<group>"; };
+		CEA2813B2A3328E100B9A587 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 		CEA3DDE02A293A7700A50B41 /* Lab_12_11_1 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab_12_11_1; sourceTree = BUILT_PRODUCTS_DIR; };
-		CEA3DDE32A293A7700A50B41 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CEA3DDE32A293A7700A50B41 /* Lab_12_11_1.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Lab_12_11_1.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CEA281312A3328A500B9A587 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEA3DDDD2A293A7700A50B41 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -38,10 +49,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CEA281352A3328A600B9A587 /* UnitTest_12_11_1 */ = {
+			isa = PBXGroup;
+			children = (
+				CEA281362A3328A600B9A587 /* UnitTest_12_11_1.mm */,
+			);
+			path = UnitTest_12_11_1;
+			sourceTree = "<group>";
+		};
 		CEA3DDD72A293A7700A50B41 = {
 			isa = PBXGroup;
 			children = (
 				CEA3DDE22A293A7700A50B41 /* Lab_12_11_1 */,
+				CEA281352A3328A600B9A587 /* UnitTest_12_11_1 */,
 				CEA3DDE12A293A7700A50B41 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				CEA3DDE02A293A7700A50B41 /* Lab_12_11_1 */,
+				CEA281342A3328A500B9A587 /* UnitTest_12_11_1.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,7 +78,8 @@
 		CEA3DDE22A293A7700A50B41 /* Lab_12_11_1 */ = {
 			isa = PBXGroup;
 			children = (
-				CEA3DDE32A293A7700A50B41 /* main.cpp */,
+				CEA3DDE32A293A7700A50B41 /* Lab_12_11_1.cpp */,
+				CEA2813B2A3328E100B9A587 /* Header.h */,
 			);
 			path = Lab_12_11_1;
 			sourceTree = "<group>";
@@ -65,6 +87,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CEA281332A3328A500B9A587 /* UnitTest_12_11_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA2813A2A3328A600B9A587 /* Build configuration list for PBXNativeTarget "UnitTest_12_11_1" */;
+			buildPhases = (
+				CEA281302A3328A500B9A587 /* Sources */,
+				CEA281312A3328A500B9A587 /* Frameworks */,
+				CEA281322A3328A500B9A587 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnitTest_12_11_1;
+			productName = UnitTest_12_11_1;
+			productReference = CEA281342A3328A500B9A587 /* UnitTest_12_11_1.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CEA3DDDF2A293A7700A50B41 /* Lab_12_11_1 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEA3DDE72A293A7700A50B41 /* Build configuration list for PBXNativeTarget "Lab_12_11_1" */;
@@ -91,6 +130,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
+					CEA281332A3328A500B9A587 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
 					CEA3DDDF2A293A7700A50B41 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
@@ -110,22 +152,69 @@
 			projectRoot = "";
 			targets = (
 				CEA3DDDF2A293A7700A50B41 /* Lab_12_11_1 */,
+				CEA281332A3328A500B9A587 /* UnitTest_12_11_1 */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		CEA281322A3328A500B9A587 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		CEA281302A3328A500B9A587 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA281372A3328A600B9A587 /* UnitTest_12_11_1.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CEA3DDDC2A293A7700A50B41 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEA3DDE42A293A7700A50B41 /* main.cpp in Sources */,
+				CEA3DDE42A293A7700A50B41 /* Lab_12_11_1.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		CEA281382A3328A600B9A587 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MHJJLP6XJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lab.UnitTest-12-11-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Debug;
+		};
+		CEA281392A3328A600B9A587 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3MHJJLP6XJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Lab.UnitTest-12-11-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+			};
+			name = Release;
+		};
 		CEA3DDE52A293A7700A50B41 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -260,6 +349,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CEA2813A2A3328A600B9A587 /* Build configuration list for PBXNativeTarget "UnitTest_12_11_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA281382A3328A600B9A587 /* Debug */,
+				CEA281392A3328A600B9A587 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CEA3DDDB2A293A7700A50B41 /* Build configuration list for PBXProject "Lab_12_11_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
